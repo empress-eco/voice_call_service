@@ -1,77 +1,66 @@
+<div align="center">
+![Project Logo](https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png
+<h1 align="center">Voice Call Service: Empowering Customer Interaction</h1>
+<p align="center">
+Voice Call Service is an innovative application extension that simplifies call management and enhances customer interaction.
+<br />
+<a href="https://grow.empress.eco/">Explore the Docs</a>
+·
+<a href="https://github.com/empress-eco/voice_call_service/issues">Report Bug</a>
+·
+<a href="https://github.com/empress-eco/voice_call_service/issues">Request Feature</a>
+</p>
+</div>
 
-## Digital Sewa
-Ticketing Solution in Frappe and ERPNext along with Voice Service.
-Digital Sewa is extension for any Frappe, ERPNext or Custom App doctype, where DS Ticket can be configured to log call records handled by agent for inbound or outbound calls. This app has integration with 2 Cloud Voice service providers, Servertel and Knowlarity enabling voice call service with Frappe
-## Features
+## About The Project
 
-- Ticket creation on **incoming call**
-- Filtering tickets aginst
-- Agent creation and different status like On Call, On Break
-- Click to call from tickets itself
-- Log generation for every call
+### 📖 Overview
+Voice Call Service is a comprehensive ticketing solution extension tailored for any Empress, Empress, or Custom App. It enables effortless tracking of inbound and outbound calls, designed specifically for businesses seeking to streamline customer interactions and optimize call management.
 
+### 🌟 Key Features
+- Ticket creation on incoming calls
+- Agent creation with various statuses (On Call, On Break)
+- Click-to-call feature from tickets
+- Detailed log generation for each call
 
+## Getting Started
 
-## Installation
+### Prerequisites
+To get started, you'll need a Empress, Empress or Custom App where the Voice Call Service can be configured.
 
-Get the app
+### Installation
+Use the following steps to get the Voice Call Service running in your environment:
 
-```bash
-bench get-app digital_sewa {github_url} --branch version-14
+```sh
+# Clone the repository
+git clone https://github.com/empress-eco/voice_call_service.git
+
+# Navigate to the repository
+cd voice_call_service
+
+# Install the app
+bench get-app digital_sewa https://github.com/empress-eco/voice_call_service.git --branch version-14
+bench --site {site_name} install-app digital_sewa
 ```
 
-Install the digital_sewa app
+### Usage
+After installing the extension, configure it by copying the token from your Servetel account and pasting it in the dialer settings authorization. Create agents in Servetel, ensuring the same data is created on the ERP side. When a call is made to the caller ID, a new DS ticket will be created, or an existing one will be updated.
 
-```bash
-  bench --site{site_name} Install-app digital_sewa
-```
+## Contributing
+We warmly welcome your contributions! Here's how you can contribute:
 
-## Configuration
+- Fork the project
+- Create a feature branch (git checkout -b feature/AmazingFeature)
+- Commit your changes (git commit -m 'Add some AmazingFeature')
+- Push to the branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
 
+## License and Acknowledgements
 
+### License
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
 
+### Acknowledgements
+Special thanks to the Empress Community, the architects behind the essential tools that power this project. Their innovation and dedication have been instrumental in building the foundations and functionalities we rely on. We are profoundly grateful for their pioneering work and ongoing support.
 
-Go To Servetel
-
-
-![Logo](https://digitalsewa.nestorhawk.com/files/1.png)
-
-Copy the token from here and paste it in dialer settings Authorizatiion
-
-![Logo](https://digitalsewa.nestorhawk.com/files/8%20(1).png)
-
-Copy the Number from my Number section
-
-![Logo](https://digitalsewa.nestorhawk.com/files/3.png)
-
-and paste it in caler id
-
-![Logo](https://digitalsewa.nestorhawk.com/files/8%20(1).png)
-
-
-Now You can create agents in Servetel
-
-![Logo](https://wiki.nestorbird.com/files/9.png)
-
-And with same data you also need to create agent in erp side
-
-![Logo](https://wiki.nestorbird.com/files/5.png)
-
-Now you are good to go when someone call on caller id new DS ticket will be created if exists or else
-it will create new DS ticket
-
-![Logo](https://wiki.nestorbird.com/files/10.png)
-
-## Logs
-
-Break Logs
-
-![Logo](https://wiki.nestorbird.com/files/11.png)
-
-Agent Logs
-
-![Logo](https://wiki.nestorbird.com/files/12.png)
-
-Webhook Configuration
-
-![Logo](https://wiki.nestorbird.com/files/13.png)
+We also extend our gratitude to all our users for their invaluable feedback and suggestions. Your contributions help us continuously improve, making Voice Call Service better for everyone.
